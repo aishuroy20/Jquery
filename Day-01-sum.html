@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            let num1= $("#first").val();
+            num1=Number.parseInt(num1);
+       let num2= $("#second").val();
+       num2=Number.parseInt(num2);
+       let sum=num1+num2;
+       alert("The sum of"+" "+num1+"and"+" "+num2+" "+"="+" "+sum);
+
+        })
+      
+
+    </script>
+</head>
+<body>
+    <input type="text" id="first" value="5"><br>
+    <input type="text" id="second" value="7">
+   
+</body>
+</html>
