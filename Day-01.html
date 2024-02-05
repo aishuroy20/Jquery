@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){ //ready the document (DOM)
+        //$("P").show();  // show the p element
+       // $("P").hide();  // hide the p element
+        //alert("hello");
+
+        $("#first").css("color","red"); // id
+
+        $(".second").css("color","pink"); //class
+
+        $("[name=myname]").css("color","blue"); // name
+    })
+    </script>
+</head>
+<body>
+    <p>Hello</p>
+    <p id="first">Aishu</p>
+    <p class="second">Heyyyyy</p>
+    <p name="myname">Hey Aishu</p>
+</body>
+</html>
