@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#my-btn").click(function(){
+                let math_marks= $("#first").val();
+                math_marks=Number.parseInt(math_marks);
+                
+           let science_marks=  $("#second").val();
+           science_marks=Number.parseInt(science_marks);
+           let hindi_marks= $("#third").val();
+           hindi_marks=Number.parseInt(hindi_marks);
+           let sum=math_marks+science_marks+hindi_marks;
+           let percent=(sum)/300*100;
+           $("#sum").val(sum);
+           $("#Percantage").val(percent);
+           
+            })
+         
+
+            
+            
+
+        })
+
+    </script>
+</head>
+<body style="background-color: pink;">
+    <center>
+    <input type="text" id="first" value="Enter Maths Marks" style="margin-top: 100px;"><br>
+    <input type="text" id="second" value="Enter science Marks" style="margin-top: 20px;"><br>
+    <input type="text" id="third" value="Enter Hindi Marks" style="margin-top: 20px;"><br>
+    <input type="button" value="calculate" id="my-btn" style="margin-top: 20px;"><br>
+    <input type="text" id="sum" value="Sum" style="margin-top: 20px;">
+    <input type="text" id="Percantage" value="Percantage" style="margin-top: 20px;">
+
+</center>
+</body>
+</html>
