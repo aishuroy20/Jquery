@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+          $(document).ready(function(){
+            $("#red").css("backgroundColor","blue");
+            $("#yellow").css("backgroundColor","blue");
+             //pura document ready ho jaye to function call ho jaye
+            $("#red").click(function(){
+              
+               
+                $("#pId,#pId,#pId").each(function(){
+                $(this).css("color","red");
+                
+                $("#red").css("backgroundColor","red");
+            
+                $("#yellow").click(function(){
+                    $("#pId,#pId,#pId").each(function(){
+                        $(this).css("color","yellow");
+                        
+                        $("#yellow").css("backgroundColor","yellow");
+                    })
+
+                })
+            })
+            
+
+            })
+        })
+               
+
+                
+
+            
+    </script>
+</head>
+<body>
+    <p id="pId"> Hey Aishu</p>
+    <h1 id="pId">Hey I am a heading</h1>
+    <span id="pId"> Hey I am a Sapn</span><br>
+    <input type="button" id="red" value="RED">
+    <input type="button" id="yellow" value="yellow">
+
+    
+</body>
+</html>
