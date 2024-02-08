@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        div{
+           background-color: red;
+           width: 100px;
+           height: 100px; 
+        }
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                debugger;
+                $("div").animate({     /// animate function
+                    width:"400px",
+                })
+                $("div").animate({
+                    height:"400px",
+                })
+
+                $("div").after("<p> Hello</p>"); /// it will add element just after the selectors
+
+                
+                 
+            })
+        })
+    </script>
+</head>
+<body>
+    <div >
+        
+    </div>
+    <div >
+        
+    </div>
+
+    <button>Click me</button>
+
+
+
+</body>
+</html>
