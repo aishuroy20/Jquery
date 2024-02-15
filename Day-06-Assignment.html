@@ -20,24 +20,19 @@
 
        $(document).ready(function(){
         $("p").bind("click",{
-            mes:"Hiii Aishu"  
+            mes:"Hiii Aishu", 
+            firstVal:5,
+            secondVal:10
         },myMessage)
        
        })
        function myMessage(mess){
 
-        alert(mess.data.mes);          
+        alert(mess.data.firstVal*mess.data.secondVal);          
        }
 
 
-    //    $("p").bind("click",{
-    //         mes:"Hiii Aishu"
-    //     },myMessage()=>{
-       
-       
-
-    //     alert(mess.data.mes);
-    //    })
+    
 
 
 
