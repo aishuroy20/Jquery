@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // before live or die ...now we use on or off
+        // jitni baar uspe click krogi wo active rhega -live
+
+        $(document).ready(function(){
+            $("p").on("click",function(){
+                $(this).animate({
+                    //fontSize : "+=10px"
+                    letterSpacing:  "+=10px"
+                })
+            });
+            $("button").click(function(){
+                $("p").off()
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <p>Aishu</p>
+    <button>Click to stop font size</button>
+    
+</body>
+</html>
