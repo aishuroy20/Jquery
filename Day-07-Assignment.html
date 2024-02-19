@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // JSON
+
+       $(document).ready(function(){
+        $("button").click(function(){
+            $.getJSON("https://dummyjson.com/carts",function(myjsondata){
+             //console.log(myjsondata);
+             $("#myjsondata").html("<table><tr><th>Id</th><th>Price</th></tr></table>");
+             
+            
+            })
+        })
+       })
+            
+
+       
+    </script>
+    
+</head>
+<body>
+    <button>Click</button>
+
+    <div id="myjsondata">
+
+    </div>
+    
+    
+
+   
+    
+    
+</body>
+</html>
